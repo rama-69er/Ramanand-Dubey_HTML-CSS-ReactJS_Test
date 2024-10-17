@@ -1,0 +1,372 @@
+/* ============== Universal Tag ============== */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Times New Roman", Times, serif;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+a:hover {
+  color: black;
+}
+
+:root {
+  --theme-color-white: white;
+  --theme-color-grey: grey;
+  --theme-color-lightGrey: lightgrey;
+  --theme-color-blue: rgb(5, 181, 250);
+  --theme-color-black: black;
+  --theme-color-black-transparent: rgba(0, 0, 0, 0.9);
+  --theme-color-dark: rgb(9, 4, 27);
+  --theme-color-yellow: gold;
+}
+
+/* ==================== Body ==================== */
+body {
+  background-color: var(--theme-color-lightGrey) !important;
+}
+
+/* ================== Navigation Menu ================== */
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  text-align: center;
+  background-color: var(--theme-color-white);
+  width: 100%;
+}
+nav .img_logo {
+  height: 4rem;
+  width: 5rem;
+}
+nav .navigationBar {
+  display: flex;
+  padding: 0;
+  margin: 0;
+}
+nav .navigationBar li a {
+  text-decoration: none;
+  padding: 1rem;
+  color: var(--theme-color-black);
+}
+nav .navigationBar li a:hover {
+  background-color: red;
+}
+.theme-btn {
+  padding: 0.5rem 1rem;
+  margin: 0 0.5rem;
+  border-radius: 8px;
+}
+.btn-1 {
+  color: var(--theme-color-blue);
+  background-color: var(--theme-color-white);
+  border: 2px solid var(--theme-color-blue);
+}
+.btn-2,
+.btn-3 {
+  color: var(--theme-color-white);
+  background-color: var(--theme-color-blue);
+  border: 2px solid var(--theme-color-blue);
+}
+.btn-1:hover {
+  color: var(--theme-color-white);
+  background-color: var(--theme-color-blue);
+}
+.btn-2:hover,
+.btn-3:hover {
+  color: var(--theme-color-blue);
+  background-color: var(--theme-color-white);
+}
+.btn-8 {
+  margin: 0;
+}
+/* ====================== Main ====================== */
+.main {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("https://img.freepik.com/fotos-premium/equipe-de-negocios-novo-investidor-profissional-inicia-reuniao-de-projeto-com-gerente-financeiro-projetando-um-tablet-de-computador-digital-no-escritorio-pela-manha_533890-3542.jpg");
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+.main .main-content {
+  color: var(--theme-color-white);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 100%;
+}
+.main .main-content h1 {
+  font-size: 5rem;
+}
+/* ====================== Snap Photos ====================== */
+.snapPhotos {
+  background-color: var(--theme-color-white);
+  padding: 4rem 0;
+}
+.snapPhotos .snapPhotos-content h2 {
+  width: 40%;
+  font-size: 2rem;
+  font-weight: bolder;
+}
+.snapPhotos .snapPhotos-content .snapPhotos-cards {
+  padding: 1rem 0;
+}
+.snapPhotos .snapPhotos-cards .btn-4 {
+  margin: 0;
+}
+/* ====================== Social Media ====================== */
+
+.socialMedia {
+  margin-top: 4rem;
+  padding: 4rem 0;
+  background-color: var(--theme-color-white);
+}
+.socialMedia .socialMedia-top h2 {
+  font-size: 2rem;
+  font-weight: bolder;
+  text-align: center;
+}
+.socialMedia .socialMedia-top p {
+  font-size: x-large;
+  text-align: center;
+}
+.socialMedia .socialMedia-bottom .socialMedia-bottom-left h4 {
+  padding: 1rem 0;
+  font-weight: bold;
+}
+.socialMedia .socialMedia-bottom .socialMedia-bottom-right img {
+  width: 100%;
+  height: 100%;
+}
+/* ====================== stylish-Part ====================== */
+.stylish-Part {
+  margin-top: 4rem;
+  background-color: var(--theme-color-white);
+  padding: 4rem 0;
+}
+.stylish-Part .stylish-content {
+  text-align: center;
+}
+.stylish-Part .stylish-content h2 {
+  font-weight: bold;
+}
+.stylish-Part .stylish-content p {
+  font-size: x-large;
+  font-weight: lighter;
+  text-align: center;
+}
+.stylish-Part .stylish-contentCards {
+  border: 2px solid var(--theme-color-lightGrey);
+  text-align: center;
+  margin: 2rem 1rem 0 1rem;
+}
+.stylish-Part .stylish-contentCards img {
+  height: 15rem;
+  width: 100%;
+}
+.stylish-Part .stylish-contentCards .stylishInternalCards {
+  padding: 2rem 1rem;
+}
+.stylish-Part .stylish-contentCards .stylishInternalCards h3 {
+  margin: 1rem 0;
+}
+.stylish-Part .stylish-contentCards .stylishInternalCards p {
+  font-size: small;
+}
+/* ====================== formPage ====================== */
+
+.formPage {
+  margin-top: 4rem;
+  background-color: var(--theme-color-white);
+  padding: 4rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.formPage .formPage-content {
+  text-align: center;
+}
+.formPage .formPage-content h2 {
+  font-size: 2rem;
+  font-weight: bolder;
+  text-align: center;
+}
+.formPage .formPage-content p {
+  font-size: x-large;
+  font-weight: lighter;
+}
+.formPage .formPage-form {
+  padding: 4rem 2rem;
+  border: 2px solid var(--theme-color-grey);
+  width: fit-content;
+}
+
+form input {
+  padding: 0.5rem;
+  margin: 1rem 0;
+  border: 2px solid var(--theme-color-grey);
+  border-radius: 4px;
+}
+form input:nth-child(4) {
+  width: 100%;
+}
+
+/* ====================== Footer ====================== */
+footer {
+  background-color: var(--theme-color-dark);
+  padding: 2rem 0;
+  color: white;
+}
+
+footer .footer-upper {
+  border-bottom: 2px solid var(--theme-color-grey);
+}
+footer .footer-upper img {
+  height: 4rem;
+  filter: invert(100%);
+  border-radius: 50%;
+  margin: 1rem;
+}
+footer .footer-upper a {
+  text-decoration: none;
+  color: var(--theme-color-grey);
+}
+footer .footer-upper a:hover {
+  color: var(--theme-color-white);
+}
+footer .footer-upper button {
+  margin-bottom: 0.5rem;
+}
+
+footer .footer-lower {
+  padding: 1rem 0;
+  color: var(--theme-color-grey);
+}
+
+footer .footer-lower p {
+  color: var(--theme-color-white);
+}
+footer .footer-lower .footer-lower-left {
+  float: left;
+}
+footer .footer-lower .footer-lower-right {
+  float: right;
+}
+footer .footer-lower .footer-lower-right p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+footer .footer-lower .footer-lower-right p i {
+  background-color: var(--theme-color-grey);
+  height: 2rem;
+  width: 2rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-left: 0.5rem;
+}
+
+/* ========== Mobile Menu ========== */
+.mobile-menu {
+  display: none;
+}
+.mobile-menu span {
+  font-size: 30px;
+  cursor: pointer;
+  position: relative;
+  left: 90%;
+  top: 0;
+}
+
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  right: 0;
+  background-color: var(--theme-color-black-transparent);
+  overflow-x: hidden;
+  transition: 0.4s;
+}
+
+.overlay-content {
+  position: relative;
+  top: 10%;
+  width: 100%;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.overlay a {
+  padding: 1rem;
+  text-decoration: none;
+  font-size: 2rem;
+  color: white;
+  display: block;
+}
+
+.overlay a:hover,
+.overlay a:focus {
+  color: var(--theme-color-grey);
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 0;
+  right: 2rem;
+  font-size: 4rem;
+}
+
+/* ========= Media Query ========= */
+@media (max-width: 768px) {
+  nav {
+    display: none;
+  }
+  .mobile-menu {
+    display: block;
+  }
+  .snapPhotos .snapPhotos-content h2 {
+    width: 80%;
+  }
+  .main .main-content h1 {
+    font-size: 3rem;
+  }
+  footer .footer-lower .footer-lower-left {
+    float: none;
+  }
+  footer .footer-lower .footer-lower-right {
+    float: none;
+  }
+}
+@media screen and (max-height: 450px) {
+  .overlay a {
+    font-size: 20px;
+  }
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+}
